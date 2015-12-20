@@ -1,0 +1,6 @@
+#! /usr/bin/env perl
+
+while (<STDIN>) {
+  s/(?<=key="webpages:Enabled" value=")\s(?=")/false/g;
+  print $_;
+}
