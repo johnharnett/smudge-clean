@@ -1,8 +1,12 @@
 #! /usr/bin/env perl
 
 while (<STDIN>) {
-  s/(?<=key="webpages:Enabled" value=")\s(?=")/false/g;
-  s/(?<=name="DefaultConnection" connectionString=")\s(?=")/Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-WebApplication1-20151220121224.mdf;Initial Catalog=aspnet-WebApplication1-20151220121224;Integrated Security=True"
-      providerName="System.Data.SqlClient/g;
-  print $_;
+	#Populate ConnectionStrings
+	s/(?<=name="DefaultConnection" connectionString=")\s(?=")/Data Source=(local);Initial Catalog=DatabaseName;User Id=User;Password=Password/g;
+	  
+	#Populate AppSettings
+	s/(?<=key="Key1" value=")\s(?=")/Value1/g;
+	s/(?<=key="Key2" value=")\s(?=")/Value2/g;
+	
+	print $_;
 }
