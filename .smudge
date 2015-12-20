@@ -2,5 +2,7 @@
 
 while (<STDIN>) {
   s/(?<=key="webpages:Enabled" value=")\s(?=")/false/g;
+  s/(?<=name="DefaultConnection" connectionString=")\s(?=")/Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-WebApplication1-20151220121224.mdf;Initial Catalog=aspnet-WebApplication1-20151220121224;Integrated Security=True"
+      providerName="System.Data.SqlClient/g;
   print $_;
 }
