@@ -4,7 +4,11 @@ This repository was created to provide an example for the blog post ["Git Smudge
 
 ## To run the example ##
 
-What we're trying to accomplish here is to have a web.config or app.config with config values for local development (like Amazon Keys) but that are not available on GitHub.  The .clean filter will be used to empty the Values of the configs whenever you CHECK IN (Push to the repo).  The Smudge will be used to set the values of the config whenever you CHECK OUT.
+What we're trying to accomplish here is to have a web.config or app.config with config values for local development (like Amazon Keys) but that are not available on GitHub.  
+
+The .clean filter will be used to empty the Values of the configs whenever you **CHECK IN** (Push to the repo).  
+
+The .smudge will be used to set the values of the config whenever you **CHECK OUT**.
 
 To test it properly:
 
