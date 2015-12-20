@@ -10,7 +10,7 @@ The .clean filter will be used to empty the Values of the configs whenever you *
 
 The .smudge will be used to set the values of the config whenever you **CHECK OUT**.
 
-To test it properly:
+**To see it working:**
 
 1. Clone the repo
 2. Run the example by executing the "setup.sh" file. 
