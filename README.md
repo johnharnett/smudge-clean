@@ -1,6 +1,6 @@
 # Smudge & Clean
 
-This repository was created to provide an example for the blog post ["Git Smudge and Clean Filters"](http://www.michaelclark.x10host.com/wp/2015/12/20/git-smudge-and-clean-filters/)
+This repository was created to provide an example for the blog post ["Git Smudge and Clean Filters"](http://michaelclark.tech/2015/12/20/git-smudge-and-clean-filters/)
 
 ## To run the example ##
 
